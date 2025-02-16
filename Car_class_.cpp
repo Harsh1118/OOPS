@@ -92,6 +92,7 @@ class Car
 int main()
 {
     Car c1("Old Classic",1987,30,0,50);
+    c1.display_status();
     c1.start_engine();
     c1.accelerate(20);
     c1.brake(10);
