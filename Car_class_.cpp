@@ -35,6 +35,7 @@ class Car
         {
             cout <<"Car is at rest"<<endl;
         }
+        cout<<endl;
     }
 
     void start_engine()
