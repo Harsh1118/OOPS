@@ -81,7 +81,7 @@ class Car
             
             else 
             {
-                amount-=100-fuel_level;
+                amount=100-fuel_level;
                 fuel_level+=amount;
                 cout<<"Fuel Level is Increased by : "<<amount<<" percent"<< " , Now the Fuel Level is : "<< fuel_level<<endl;
                 is_running=1;
