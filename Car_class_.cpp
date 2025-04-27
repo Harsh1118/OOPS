@@ -35,6 +35,7 @@ class Car
         {
             cout <<"Car is at rest"<<endl;
         }
+        cout<<endl;
     }
 
     void start_engine()
@@ -81,7 +82,7 @@ class Car
             
             else 
             {
-                amount-=100-fuel_level;
+                amount=100-fuel_level;
                 fuel_level+=amount;
                 cout<<"Fuel Level is Increased by : "<<amount<<" percent"<< " , Now the Fuel Level is : "<< fuel_level<<endl;
                 is_running=1;
@@ -92,6 +93,7 @@ class Car
 int main()
 {
     Car c1("Old Classic",1987,30,0,50);
+    c1.display_status();
     c1.start_engine();
     c1.accelerate(20);
     c1.brake(10);
